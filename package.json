@@ -1,0 +1,24 @@
+{
+  "name": "reactotron-legendstate-plugin",
+  "version": "1.0.0",
+  "description": "This plugin integrates Legend-State observables with Reactotron, enabling real-time monitoring and debugging of state changes in applications that use Legend-State for state management.",
+  "main": "index.ts",
+  "keywords": [
+    "reactotron",
+    "legend-state",
+    "state",
+    "state management",
+    "debugging",
+    "monitoring",
+    "plugin"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pacs27/reactotron-legendstate-plugin.git"
+    },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "pacs27",
+  "license": "MIT"
+}
