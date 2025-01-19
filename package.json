@@ -1,6 +1,6 @@
 {
   "name": "reactotron-legendstate-plugin",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "This plugin integrates Legend-State observables with Reactotron, enabling real-time monitoring and debugging of state changes in applications that use Legend-State for state management.",
   "main": "index.ts",
   "keywords": [
