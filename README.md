@@ -24,21 +24,25 @@ import reactotronLegendState from "reactotron-legendstate-plugin";
 import observable$ from "path/to/observable";
 import { observe } from "@legendapp/state";
 
-Reactotron.setAsyncStorageHandler(AsyncStorage) // AsyncStorage can be from `react-native` or `@react-native-community/async-storage`
+
+Reactotron.setAsyncStorageHandler(AsyncStorage) 
     .configure({
         name: 'Project Name',
-    }) // controls connection & communication settings
-    .useReactNative() // add all built-in React Native plugins
+    }) 
+    .useReactNative() 
     .use(
-        // add this line 🙌
         reactotronLegendState({
             stores: [
+                // Add all observables here
                 { name: 'observable', observable: observable$ },
             ],
-            observe
+            observe // Add observe function from legend-state
         })
-    ) // plus some custom plugins
-    .connect(); // let's connect!
+    ) 
+    .connect();
+    
 ```
 
 **Note:** You need to add a new subscription with the store name (in this case, `observable`) under the state tab in Reactotron to monitor state changes.
+
+![Reactotron App](docs/reactotron-app.png)
